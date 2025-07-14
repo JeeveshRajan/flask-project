@@ -15,6 +15,7 @@ spec:
       containers:
         - name: inspiring-quotes-api
           image: itsjeevesh/inspiring-quotes-api:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 5000
           livenessProbe:
