@@ -8,6 +8,6 @@ spec:
     app: inspiring-quotes-api
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 5000
-      nodePort: 30007
+      port: 80           # External port (can be left as 80)
+      targetPort: 5000   # Flask app internal port
+      nodePort: 30007    # NodePort exposed by Kubernetes
