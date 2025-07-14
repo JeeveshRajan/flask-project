@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: inspiring-quotes-api
-        image: itsjeevesh/inspiring-quotes-api:latest
+        image: <your-dockerhub-username>/inspiring-quotes-api:latest
         ports:
         - containerPort: 5000
         livenessProbe:
@@ -28,4 +28,4 @@ spec:
             path: /health
             port: 5000
           initialDelaySeconds: 5
-          periodSeconds: 10
+          periodSeconds: 10 
