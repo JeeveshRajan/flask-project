@@ -13,19 +13,19 @@ spec:
         app: inspiring-quotes-api
     spec:
       containers:
-      - name: inspiring-quotes-api
-        image: <your-dockerhub-username>/inspiring-quotes-api:latest
-        ports:
-        - containerPort: 5000
-        livenessProbe:
-          httpGet:
-            path: /health
-            port: 5000
-          initialDelaySeconds: 5
-          periodSeconds: 10
-        readinessProbe:
-          httpGet:
-            path: /health
-            port: 5000
-          initialDelaySeconds: 5
-          periodSeconds: 10 
+        - name: inspiring-quotes-api
+          image: itsjeevesh/inspiring-quotes-api:latest
+          ports:
+            - containerPort: 5000
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 5000
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 5000
+            initialDelaySeconds: 5
+            periodSeconds: 10
