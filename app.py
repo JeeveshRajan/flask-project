@@ -26,4 +26,5 @@ def health():
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000) 
 
-# To run the application, use the command: python app.py    
+# To run the application, use the command: python app.py 
+# to check the k8 automation   
