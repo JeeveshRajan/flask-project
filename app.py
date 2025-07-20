@@ -13,7 +13,7 @@ QUOTES = [
 
 @app.route("/")
 def home():
-    return "I like to read quotes everyday!"
+    return "I like to read quotes everyday and prosit dont want to read quotes!"
 
 @app.route("/quote")
 def quote():
